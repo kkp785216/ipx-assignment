@@ -1,4 +1,4 @@
-import React, {useRef, useEffect} from 'react'
+import React, { useRef, useEffect } from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
@@ -52,6 +52,17 @@ const Project = () => {
                     slidesPerView={4}
                     modules={[Navigation]}
                     navigation
+                    breakpoints={{
+                        0: { slidesPerView: 1.2 },
+                        768: { slidesPerView: 2.4 },
+                        790: { slidesPerView: 2.5 },
+                        824: { slidesPerView: 2.6 },
+                        890: { slidesPerView: 2.8 },
+                        924: { slidesPerView: 3 },
+                        1024: { slidesPerView: 3.2 },
+                        1110: { slidesPerView: 3.5 },
+                        1240: { slidesPerView: 4 },
+                    }}
                 >
                     {[0, 0, 0, 0, 0, 0, 0, 0].map((e, i) => (
                         <SwiperSlide key={i}>
