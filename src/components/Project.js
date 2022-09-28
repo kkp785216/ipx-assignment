@@ -1,10 +1,13 @@
-import React from 'react'
+import React, {useRef, useEffect} from 'react'
 import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
+import 'swiper/css/navigation';
+import { Navigation } from 'swiper';
+import '../styles/swiper.css'
 
-const ProjectCard = ({ children }) => {
+const ProjectCard = () => {
     return (
-        <div className='p-[14.5px] bg-[#121212] rounded-[16.6285px] text-[#ececec]'>
+        <div className='p-[14.5px] bg-[#121212] rounded-[16.6285px] text-[#ececec] hover:bg-[#2c2c2c]'>
             <img className='w-full rounded-[11.0857px]' src="/img/project.png" alt="" />
             <div className='flex items-start space-x-3 my-[22.5px]'>
                 <img className='w-[33.26px] h-[33.26px]' src="img/author.png" alt="" />
@@ -27,15 +30,28 @@ const ProjectCard = ({ children }) => {
 }
 
 const Project = () => {
+
+    const swiperRef = useRef();
+    const buttonRef = useRef();
+    useEffect(() => {
+        const prev = swiperRef.current.querySelector('.swiper-button-prev');
+        const next = swiperRef.current.querySelector('.swiper-button-next');
+        prev && buttonRef.current.append(prev);
+        next && buttonRef.current.append(next);
+    }, []);
+
     return (
-        <div>
-            <div className='flex'>
+        <div className='pb-14'>
+            <div className='flex items-center space-x-11'>
                 <h3 className='text-[28px]'>More from this project</h3>
+                <div className='relative flex items-center space-x-2' ref={buttonRef}></div>
             </div>
-            <div className='mt-7'>
+            <div className='mt-7 relative' ref={swiperRef}>
                 <Swiper
                     spaceBetween={28.2}
                     slidesPerView={4}
+                    modules={[Navigation]}
+                    navigation
                 >
                     {[0, 0, 0, 0, 0, 0, 0, 0].map((e, i) => (
                         <SwiperSlide key={i}>
@@ -43,6 +59,10 @@ const Project = () => {
                         </SwiperSlide>
                     ))}
                 </Swiper>
+                <div className='w-[18.2638889vw] bg-gradient-to-r from-transparent to-black absolute top-0 right-0 bottom-0 z-10'></div>
+            </div>
+            <div>
+                <button className='px-14 py-4 text-xs rounded-full border hover:bg-[#1b1b1b] border-white mt-14 mx-auto block uppercase'>VIEW PROJECT</button>
             </div>
         </div>
     )
