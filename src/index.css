@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'Zuume';
+    src: url('./fonts/zuume/Zuume\ SemiBold.ttf');
+}
+@font-face {
+    font-family: 'Visby CF';
+    src: url('./fonts/visbycf/Fontspring-DEMO-visbycf-regular.otf');
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
