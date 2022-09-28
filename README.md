@@ -1,6 +1,6 @@
 # Vega Movie - React
 
-<h3><a href="https://github.com/kkp785216/ipx-assignment">View Demo</a></h3>
+<h3><a href="http://ipx-assignment-5arg.vercel.app/">View Demo</a></h3>
 
 ### IPx Club Assignments
 
