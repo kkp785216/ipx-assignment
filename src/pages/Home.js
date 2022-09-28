@@ -2,6 +2,8 @@ import React from 'react'
 import { CollapseCard, CollapseCardBox, CollapseCardList } from '../components/CollapseCard'
 import CommonShare from '../components/CommonShare'
 import { Section } from '../components/Layout'
+import Project from '../components/Project'
+import SocailCard from '../components/SocailCard'
 
 const Home = () => {
   return (
@@ -68,11 +70,20 @@ const Home = () => {
 
       <Section>
         <div className='mt-16'>
-          <CollapseCard heading='Stay connected'>
-
-          </CollapseCard>
+          <SocailCard />
         </div>
       </Section>
+
+      <Section>
+        <div className='py-16'>
+          <div className='w-full h-px bg-gradient-to-r from-transparent via-white to-transparent'></div>
+        </div>
+      </Section>
+
+      <Section>
+        <Project/>
+      </Section>
+
     </div>
   )
 }

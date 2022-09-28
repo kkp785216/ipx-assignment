@@ -55,6 +55,19 @@ export const CollapseCard = ({ children, heading }) => {
     )
 }
 
+export const SocialeCard = ({ children, heading }) => {
+    return (
+        <div className='border-[2px] border-[#333333] font-["Visby_CF"] tracking-[0.8px]'>
+            <div className='pl-[68px] pr-[66px] border-b border-[#333333] py-4'>
+                <span className='text-lg tracking-[1px] leading-[normal] text-[17px] font-medium block'>{heading}</span>
+            </div>
+            <div className='pl-[68px] pr-[66px]'>
+                {children}
+            </div>
+        </div>
+    )
+}
+
 export const CollapseCardBox = ({ children, heading }) => {
     return (
         <div className='border-[2px] border-[#333333] font-["Visby_CF"] tracking-[0.8px]'>
@@ -73,8 +86,4 @@ export const CollapseCardBox = ({ children, heading }) => {
             </div>
         </div>
     )
-}
-
-export const SocialCard = () => {
-
 }
