@@ -69,15 +69,15 @@ const CommonShare = () => {
                                 <label className='leading-[normal] relative -top-[3px]' onClick={e => setButNowTerms(!buyNowTerms)} htmlFor="buynow">I understand the benefits, terms and risks in buying this NFT</label>
                             </div>
                             <div className='flex space-x-5 mt-3.5'>
-                                <div className='method relative active cursor-pointer'>
+                                <div className='method relative active cursor-pointer group'>
                                     <div className='method:bg-[radial-gradient(86.07%_145.35%_at_28.05%_86.07%,_#3E67FF_0%,_#E47298_100%)] rounded-[10px] md:p-px'>
-                                        <div className='hidden method:block w-[174px] h-[48px] rounded-[10px]'></div>
+                                        <div className='hidden method:block w-[174px] group-hover:bg-[#170303] transition-colors duration-75 h-[48px] rounded-[10px]'></div>
                                         <span className='flex justify-center items-center absolute top-0 bottom-0 left-0 right-0 m-auto text-sm tracking-[1px] font-["Visby_CF"] font-semibold'>Buy Now</span>
                                     </div>
                                 </div>
-                                <div className='method relative active cursor-pointer'>
+                                <div className='method relative active cursor-pointer group'>
                                     <div className='method:bg-[radial-gradient(86.07%_145.35%_at_28.05%_86.07%,_#3E67FF_0%,_#E47298_100%)] rounded-[10px] md:p-px'>
-                                        <div className='hidden method:block w-[174px] h-[48px] bg-[#170303] rounded-[10px]'></div>
+                                        <div className='hidden method:block w-[174px] h-[48px] bg-[#170303] group-hover:bg-[#170303] transition-colors duration-75 rounded-[10px]'></div>
                                         <span className='flex justify-center items-center absolute top-0 bottom-0 left-0 right-0 m-auto text-sm tracking-[1px] font-["Visby_CF"] font-semibold'>Request call back</span>
                                     </div>
                                 </div>

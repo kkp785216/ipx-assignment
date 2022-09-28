@@ -8,6 +8,7 @@ module.exports = {
   plugins: [
     plugin(function({ addVariant }) {
       addVariant("method", ".method.active &");
+      addVariant("collapsecard", ".collapsecard.active &");
     }),
   ],
 }
