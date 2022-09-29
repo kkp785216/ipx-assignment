@@ -45,10 +45,10 @@ export const CollapseCardList = ({ title, description, active }) => {
 export const CollapseCard = ({ children, heading }) => {
     return (
         <div className='border-[2px] border-[#333333] font-["Visby_CF"] tracking-[0.8px]'>
-            <div className='pl-[68px] pr-[66px] border-b border-[#333333] py-4'>
+            <div className='pl-[clamp(24px,4.72222vw,68px)] pr-[clamp(24px,clamp(24px,4.58333vw,66px),66px)] border-b border-[#333333] py-4'>
                 <span className='text-lg tracking-[1px] leading-[normal] text-[17px] font-medium block'>{heading}</span>
             </div>
-            <div className='pl-[68px] pr-[66px] [&>*]:py-10 [&> [&>*]:border-b [&>*]:border-[#333333]'>
+            <div className='pl-[clamp(24px,4.72222vw,68px)] pr-[clamp(24px,4.58333vw,66px)] [&>*]:py-10 [&> [&>*]:border-b [&>*]:border-[#333333]'>
                 {children}
             </div>
         </div>
@@ -58,10 +58,10 @@ export const CollapseCard = ({ children, heading }) => {
 export const SocialeCard = ({ children, heading }) => {
     return (
         <div className='border-[2px] border-[#333333] font-["Visby_CF"] tracking-[0.8px]'>
-            <div className='pl-[68px] pr-[66px] border-b border-[#333333] py-4'>
+            <div className='pl-[clamp(24px,4.72222vw,68px)] pr-[clamp(24px,4.58333vw,66px)] border-b border-[#333333] py-4'>
                 <span className='text-lg tracking-[1px] leading-[normal] text-[17px] font-medium block'>{heading}</span>
             </div>
-            <div className='pl-[68px] pr-[66px]'>
+            <div className='pl-[clamp(24px,4.72222vw,68px)] pr-[clamp(24px,4.58333vw,66px)]'>
                 {children}
             </div>
         </div>
@@ -71,10 +71,10 @@ export const SocialeCard = ({ children, heading }) => {
 export const CollapseCardBox = ({ children, heading }) => {
     return (
         <div className='border-[2px] border-[#333333] font-["Visby_CF"] tracking-[0.8px]'>
-            <div className='pl-[68px] pr-[66px] border-b border-[#333333] py-4'>
+            <div className='pl-[clamp(24px,4.72222vw,68px)] pr-[clamp(24px,4.58333vw,66px)] border-b border-[#333333] py-4'>
                 <span className='text-lg tracking-[1px] leading-[normal] text-[17px] font-medium block'>{heading}</span>
             </div>
-            <div className='pl-[68px] pr-[66px] flex items-start space-x-[45px]'>
+            <div className='pl-[clamp(24px,4.72222vw,68px)] pr-[clamp(24px,4.58333vw,66px)] flex items-start space-x-[45px]'>
                 <div className='w-[27.36vw] flex-[0_0_auto] border-[2px] border-[#333333] my-10'>
                     <div className='relative pb-[79.1878173%]'>
                         <div className='absolute top-0 bottom-0 left-0 right-0'></div>

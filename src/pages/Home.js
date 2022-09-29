@@ -81,7 +81,7 @@ const Home = () => {
       </Section>
 
       <Section>
-        <Project/>
+        <Project />
       </Section>
 
     </div>
