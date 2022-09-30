@@ -3,7 +3,7 @@ import { Section } from './Layout'
 
 const Footer = () => {
     return (
-        <div className='mt-11'>
+        <div className='mt-11 hidden md:block'>
             <Section>
                 <ul className='flex -m-[18.49px]'>
                     <li className='p-[18.49px] text-[#666666] hover:text-[#a3a3a3] cursor-pointer'>About</li>

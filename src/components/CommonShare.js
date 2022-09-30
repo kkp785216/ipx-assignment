@@ -6,12 +6,12 @@ const CommonShare = () => {
     const [buyNowTerms, setButNowTerms] = useState(false);
 
     return (
-        <div className='flex flex-col md:flex-row space-x-0 md:space-x-[65px]'>
-            <img className='w-[46%]' src="/img/thumbnail.png" alt="" />
-            <div className='w-[54%]'>
+        <div className='flex flex-col md:flex-row space-x-0 md:space-x-[clamp(24px,4.513888vw,65px)]'>
+            <img className='w-full max-w-[400px] md:max-w-none md:w-[46%]' src="/img/thumbnail.png" alt="" />
+            <div className='w-full md:w-[54%]'>
                 <div>
                     <span className='text-xs font-["Visby_CF"] tracking-[1px] text-[grey] leading-3'>investment option</span>
-                    <h2 className='text-[46px] font-["Zuume"] tracking-[6.78641px] relative -top-1'>Common Share</h2>
+                    <h2 className='text-[clamp(32px,3.194444vw,46px)] font-["Zuume"] tracking-[clamp(2px,0.47127vw,6.7864px)] relative -top-1'>Common Share</h2>
                 </div>
                 <div className='mt-4 py-4 border-t border-b border-[#333333] flex items-center space-x-[6.3194444vw]'>
                     <div>
@@ -27,7 +27,8 @@ const CommonShare = () => {
                         <span className='text-sm mt-1.5 font-["Visby_CF"] text-[grey] tracking-[1px] leading-[normal]'>Follow NFT</span>
                     </div>
                 </div>
-                <div className='mt-11 border-[2px] border-[#333333]'>
+                <div className='overflow-auto'>
+                <div className='mt-11 border-[2px] border-[#333333] min-w-[600px] md:min-w-[unset]'>
                     <div className='px-[35px] border-b border-[#333333] py-5'>
                         <span className='font-["Visby_CF"] text-lg tracking-[1px] leading-[normal]'>Sale ends on 20 june, 2022 at 10:30pm, GMT +5:30</span>
                     </div>
@@ -84,6 +85,7 @@ const CommonShare = () => {
                             </div>
                         </div>
                     </div>
+                </div>
                 </div>
             </div>
         </div>

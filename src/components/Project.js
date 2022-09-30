@@ -54,6 +54,15 @@ const Project = () => {
                     navigation
                     breakpoints={{
                         0: { slidesPerView: 1.2 },
+                        360: { slidesPerView: 1.2 },
+                        390: { slidesPerView: 1.35 },
+                        424: { slidesPerView: 1.50 },
+                        490: { slidesPerView: 1.65 },
+                        524: { slidesPerView: 1.8 },
+                        590: { slidesPerView: 2 },
+                        624: { slidesPerView: 2.1 },
+                        690: { slidesPerView: 2.2 },
+                        724: { slidesPerView: 2.3 },
                         768: { slidesPerView: 2.4 },
                         790: { slidesPerView: 2.5 },
                         824: { slidesPerView: 2.6 },
@@ -70,7 +79,7 @@ const Project = () => {
                         </SwiperSlide>
                     ))}
                 </Swiper>
-                <div className='w-[18.2638889vw] bg-gradient-to-r from-transparent to-black absolute top-0 right-0 bottom-0 z-10'></div>
+                <div className='w-[18.2638889vw] hidden lg:block bg-gradient-to-r from-transparent to-black absolute top-0 right-0 bottom-0 z-10'></div>
             </div>
             <div>
                 <button className='px-14 py-4 text-xs rounded-full border hover:bg-[#1b1b1b] border-white mt-14 mx-auto block uppercase'>VIEW PROJECT</button>
