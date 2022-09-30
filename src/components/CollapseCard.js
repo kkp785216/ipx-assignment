@@ -74,13 +74,13 @@ export const CollapseCardBox = ({ children, heading }) => {
             <div className='pl-[clamp(24px,4.72222vw,68px)] pr-[clamp(24px,4.58333vw,66px)] border-b border-[#333333] py-4'>
                 <span className='text-lg tracking-[1px] leading-[normal] text-[clamp(14.5px,1.18055vw,17px)] font-medium block'>{heading}</span>
             </div>
-            <div className='pl-[clamp(24px,4.72222vw,68px)] pr-[clamp(24px,4.58333vw,66px)] flex items-start space-x-[45px]'>
-                <div className='w-[27.36vw] max-w-[394px] flex-[0_0_auto] border-[2px] border-[#333333] my-10'>
+            <div className='pl-[clamp(24px,4.72222vw,68px)] pr-[clamp(24px,4.58333vw,66px)] flex flex-col md:flex-row items-start md:space-x-[clamp(24px,3.125vw,45px)]'>
+                <div className='w-full md:w-[27.36vw] max-w-[394px] flex-[0_0_auto] border-[2px] border-[#333333] my-10'>
                     <div className='relative pb-[79.1878173%]'>
                         <div className='absolute top-0 bottom-0 left-0 right-0'></div>
                     </div>
                 </div>
-                <div className='[&>*]:py-[clamp(24px,2.777777vw,40px)]  [&>*]:border-b [&>*]:border-[#333333] flex-auto'>
+                <div className='[&>*]:py-[clamp(24px,2.777777vw,40px)] w-full md:w-[unset] [&>*]:border-b [&>*]:border-[#333333] flex-auto'>
                     {children}
                 </div>
             </div>
